@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
+import SimuladoSection from "@/components/SimuladoSection";
 
 type Subject = {
   id: string;
@@ -393,6 +394,7 @@ export default function Home() {
         <nav className="top-nav" aria-label="Navegação principal">
           <a href="#trilha">Disciplinas</a>
           <a href="#estudo">Caderno</a>
+          <a href="#simulado">Simulado</a>
           <a href="#fontes">Fontes</a>
         </nav>
 
@@ -617,10 +619,12 @@ export default function Home() {
           </article>
         </section>
 
+        <SimuladoSection />
+
         <section className="review-section">
           <div className="review-graphic" aria-hidden="true"><Workflow size={36} /><span>REVISÃO</span><b>24h<br />7d<br />30d</b></div>
           <div className="review-copy">
-            <span className="section-index">03 / RITUAL DE FIXAÇÃO</span>
+            <span className="section-index">04 / RITUAL DE FIXAÇÃO</span>
             <h2>Feche a folha.<br /><em>Reabra o caminho.</em></h2>
             <p>Depois da aula, retorne ao mapa em 24 horas e use a tabela para testar diferenças. A revisão distribui o esforço e revela onde o conceito ainda não se sustenta.</p>
           </div>
